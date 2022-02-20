@@ -51,7 +51,8 @@ library
     -- Modules exported by the library.
     exposed-modules:  Chapter1,
                       Chapter2,
-                      Chapter3
+                      Chapter3,
+                      Chapter4
 
     -- Modules included in this library but not exported.
     -- other-modules:

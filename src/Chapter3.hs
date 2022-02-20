@@ -40,3 +40,6 @@ instance Functor T5 where
 -- >>> :t words
 -- >>> :t show
 -- >>> :t words . ( show :: Bool -> String )
+-- words :: String -> [String]
+-- show :: Show a => a -> String
+-- words . ( show :: Bool -> String ) :: Bool -> [String]
