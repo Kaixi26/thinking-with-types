@@ -55,7 +55,8 @@ library
                       Chapter4,
                       Chapter5,
                       Chapter6,
-                      Chapter7
+                      Chapter7,
+                      Chapter8
 
     -- Modules included in this library but not exported.
     -- other-modules:
@@ -64,7 +65,8 @@ library
     -- other-extensions:
 
     -- Other library packages from which modules are imported.
-    build-depends:    base ^>=4.14.3.0
+    build-depends:    base ^>=4.14.3.0,
+                      containers >= 0.6
 
     -- Directories containing source files.
     hs-source-dirs:   src

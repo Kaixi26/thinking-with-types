@@ -5,9 +5,10 @@ let
     hlint
     haskell-language-server
     ormolu
+    containers
   ]);
 in
   pkgs.stdenv.mkDerivation {
-    name = "xmonad-config";
+    name = "thinking-with-types";
     buildInputs = [ ghc ];
   }
