@@ -56,7 +56,8 @@ library
                       Chapter5,
                       Chapter6,
                       Chapter7,
-                      Chapter8
+                      Chapter8,
+                      Chapter9
 
     -- Modules included in this library but not exported.
     -- other-modules:
