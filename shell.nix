@@ -6,6 +6,7 @@ let
     haskell-language-server
     ormolu
     containers
+    first-class-families
   ]);
 in
   pkgs.stdenv.mkDerivation {
