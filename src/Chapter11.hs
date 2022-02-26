@@ -4,6 +4,7 @@
 {-# LANGUAGE FlexibleContexts #-}
 {-# LANGUAGE FlexibleInstances #-}
 {-# LANGUAGE GADTs #-}
+{-# LANGUAGE MultiParamTypeClasses #-}
 {-# LANGUAGE OverloadedLabels #-}
 {-# LANGUAGE PolyKinds #-}
 {-# LANGUAGE RankNTypes #-}
@@ -12,7 +13,6 @@
 {-# LANGUAGE TypeFamilies #-}
 {-# LANGUAGE TypeOperators #-}
 {-# LANGUAGE UndecidableInstances #-}
-{-# LANGUAGE MultiParamTypeClasses #-}
 
 module Chapter11 where
 
@@ -23,9 +23,9 @@ import qualified Data.Vector as V
 import Fcf hiding (Any)
 import Fcf.Class.Functor (FMap)
 import Fcf.Data.List (Cons, Drop, Reverse, Take)
+import GHC.OverloadedLabels (IsLabel (fromLabel))
 import GHC.TypeLits
 import Unsafe.Coerce
-import GHC.OverloadedLabels (IsLabel (fromLabel))
 
 data OpenSum (f :: k -> Type) (ts :: [k]) where
   UnsafeOpenSum ::
